@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<h1>Виведення тексту з appsettings.json: </h1>
+<p>@Configuration["Logging:LogLevel:Default"]</p>
